@@ -1,0 +1,6 @@
+ {
+  "scripts": {
+       "dev": "concurrently \"cd frontend && npm start\" "
+   }
+
+   }
