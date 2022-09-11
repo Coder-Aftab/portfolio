@@ -1,6 +1,6 @@
  {
   "scripts": {
-       "start": "concurrently \"cd frontend && npm start\" "
+       "start": "\"cd frontend && npm start\" "
    }
 
    }
