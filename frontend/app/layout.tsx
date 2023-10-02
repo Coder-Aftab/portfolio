@@ -1,10 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-
+import "./styles/master.scss";
 const poppins = Poppins({
   style: "normal",
   weight: "400",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
