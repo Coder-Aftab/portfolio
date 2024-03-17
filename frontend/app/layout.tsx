@@ -1,8 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import "./styles/master.scss";
-const poppins = Poppins({
+import { Inter } from "next/font/google";
+import "@/src/styles/master.scss";
+import NavBar from "@/src/components/NavBar";
+import Footer from "@/src/components/Footer";
+const poppins = Inter({
   style: "normal",
   weight: "400",
   subsets: ["latin"],
@@ -20,7 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <NavBar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
